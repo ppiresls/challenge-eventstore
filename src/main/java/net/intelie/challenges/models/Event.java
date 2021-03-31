@@ -1,4 +1,4 @@
-package net.intelie.challenges;
+package net.intelie.challenges.models;
 
 /**
  * This is just an event stub, feel free to expand it if needed.
@@ -18,5 +18,11 @@ public class Event {
 
     public long timestamp() {
         return timestamp;
+    }
+
+    @Override
+    public String toString() {
+        return "Event{type='" + type + '\'' +
+                ", timestamp=" + timestamp + '}';
     }
 }
